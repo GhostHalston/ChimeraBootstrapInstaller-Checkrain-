@@ -2,7 +2,7 @@
 if [ "$EUID" -ne 0 ]; then
 echo Please run this script as root.
 else
-echo -e "\e[31mWelcome to Chimera Bootstrap Install Utility V1.1.3 (Beta) By @Yaya4_4 Follow Me On Twitter Pls.\e[0m"
+echo -e "\e[31mWelcome to Chimera Bootstrap Install Utility V1.1.4 (Beta) By @Yaya4_4 Follow Me On Twitter Pls.\e[0m"
 echo "Installing Dependency For The Installer"
 apt update
 apt install unzip
