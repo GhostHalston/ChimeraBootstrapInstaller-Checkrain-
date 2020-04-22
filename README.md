@@ -1,4 +1,7 @@
 # ChimeraBootstrapInstaller-Checkrain-
+PS USE THE OFFICIAL METHOD THIS IS OUTDATED
+
+
 So Just A Simple Script That Install Chimera Bootsrap On Checkrain.
 
 How its work ?
