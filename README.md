@@ -3,6 +3,7 @@ So Just A Simple Script That Install Chimera Bootsrap On Checkrain.
 
 How its work ?
 
+Minimum 3mb/s of internet recommended
 
 First restore rootfs Jailbreak and install Cydia (it will install bingner boostrap yeah but we need weget)
 Either use newterm or install openssh and connect to your iphone through ssh (recommended as newterm could crash during the process)
@@ -20,3 +21,7 @@ Q:No.
 A:Can I upgrade all future package from chimera repo
 
 Q:Yes.
+
+A:Can i revert the proccess ?
+
+Q:Yes Restore Rootfs In Checkrain Loader
