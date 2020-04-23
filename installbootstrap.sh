@@ -2,12 +2,13 @@
 if [ "$EUID" -ne 0 ]; then
 echo Please run this script as root.
 else
-echo -e "\e[31mWelcome to Chimera Bootstrap Install Utility V1.1.4 (Beta) By @Yaya4_4 Follow Me On Twitter Pls.\e[0m"
+echo -e "\e[31mWelcome to Chimera Bootstrap Install Utility V1.1.4.1 (Beta) By @Yaya4_4 Follow Me On Twitter Pls.\e[0m"
 echo "Installing Dependency For The Installer"
 apt update
 apt install unzip
-echo "Verify If Cydia Substrate Is Installed"
+echo "Verify If Cydia Substrate/Substitue Is Installed"
 apt remove mobilesubstrate -y
+apt remove com.ex.substitute -y
 echo "Done. Create Custom Directory For Download All Files Requied. Path (/User/Documents/ChimeraBootstrap)."
 rm -rf /User/Documents/ChimeraBootstrap
 mkdir /User/Documents/ChimeraBootstrap
