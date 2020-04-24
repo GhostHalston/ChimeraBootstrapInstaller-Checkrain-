@@ -1,4 +1,4 @@
-# ChimeraBootstrapInstaller-Checkrain-
+# ChimeraBootstrapInstaller(CheckRa1n)
 PS USE THE OFFICIAL METHOD
 
 
