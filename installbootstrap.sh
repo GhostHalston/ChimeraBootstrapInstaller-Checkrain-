@@ -17,9 +17,10 @@ echo "Done. Downloading The Bootstrap..."
 wget https://github.com/Yaya48/ChimeraBootstrapInstaller-Checkrain-/raw/master/bootstrap.zip --directory-prefix=/User/Documents/ChimeraBootstrap
 wget https://github.com/Yaya48/ChimeraBootstrapInstaller-Checkrain-/raw/master/launchctl.gz --directory-prefix=/User/Documents/ChimeraBootstrap
 unzip /User/Documents/ChimeraBootstrap/bootstrap.zip -d /User/Documents/ChimeraBootstrap/
-gzip -d /User/Documents/ChimeraBootstrap/launchctl.gz --directory-prefix=/User/Documents/ChimeraBootstrap
+gzip -d /User/Documents/ChimeraBootstrap/launchctl.gz
 echo "Done. Extracting The Bootstrap to /"
-cp -r -f /User/Documents/ChimeraBoostrap/launchtl /bin/launchctl
+rm /bin/launchctl
+cp /User/Documents/ChimeraBootstrap/launchctl /bin/launchctl
 chmod +x /bin/launchctl
 cp -r -f -u /User/Documents/ChimeraBootstrap/bootstrap/* /
 echo "Done. Downloading necessary debs."
