@@ -2,20 +2,25 @@
 if [ "$EUID" -ne 0 ]; then
 echo Please run this script as root.
 else
-echo -e "\e[31mWelcome to Chimera Bootstrap Install Utility V1.1.4.1 (Beta) By @Yaya4_4 Follow Me On Twitter Pls.\e[0m"
+echo -e "\e[31mWelcome to Chimera Bootstrap Install Utility V1.1.5 (Beta) By @Yaya4_4 Follow Me On Twitter Pls.\e[0m"
 echo "Installing Dependency For The Installer"
 apt update
-apt install unzip
+apt install unzip -y
+apt install gzip -y
 echo "Verify If Cydia Substrate/Substitue Is Installed"
 apt remove mobilesubstrate -y
 apt remove com.ex.substitute -y
 echo "Done. Create Custom Directory For Download All Files Requied. Path (/User/Documents/ChimeraBootstrap)."
 rm -rf /User/Documents/ChimeraBootstrap
-mkdir /User/Documents/ChimeraBootstrap
+mkdir /User/Documents/ChimeraBootstraplaunchctl.gz
 echo "Done. Downloading The Bootstrap..."
 wget https://github.com/Yaya48/ChimeraBootstrapInstaller-Checkrain-/raw/master/bootstrap.zip --directory-prefix=/User/Documents/ChimeraBootstrap
+wget https://github.com/Yaya48/ChimeraBootstrapInstaller-Checkrain-/raw/master/launchctl.gz --directory-prefix=/User/Documents/ChimeraBootstrap
 unzip /User/Documents/ChimeraBootstrap/bootstrap.zip -d /User/Documents/ChimeraBootstrap/
+gzip -d /User/Documents/ChimeraBootstrap/launchctl.gz --directory-prefix=/User/Documents/ChimeraBootstrap
 echo "Done. Extracting The Bootstrap to /"
+cp -r -f /User/Documents/ChimeraBoostrap/launchtl /bin/launchctl
+chmod +x /bin/launchctl
 cp -r -f -u /User/Documents/ChimeraBootstrap/bootstrap/* /
 echo "Done. Downloading necessary debs."
 wget https://electrarepo64.coolstar.org/debs/cydia_2.3_iphoneos-arm.deb --directory-prefix=/User/Documents/ChimeraBootstrap
