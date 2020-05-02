@@ -10,6 +10,8 @@ apt install gzip -y
 echo "Verify If Cydia Substrate/Substitue Is Installed"
 apt remove mobilesubstrate -y
 apt remove com.ex.substitute -y
+echo "Uninstalling Cydia"
+apt remove cydia -y
 echo "Done. Create Custom Directory For Download All Files Requied. Path (/User/Documents/ChimeraBootstrap)."
 rm -rf /User/Documents/ChimeraBootstrap
 mkdir /User/Documents/ChimeraBootstraplaunchctl.gz
@@ -106,7 +108,6 @@ bash /usr/libexec/cydia/firmware.sh
 dpkg -i --force-all /User/Documents/ChimeraBootstrap/org.coolstar.sileo_1.7.4_iphoneos-arm.deb
 dpkg -i --force-all /User/Documents/ChimeraBootstrap/org.swift.libswift_5.0-electra2_iphoneos-arm.deb
 echo "BootStrap Installions Done. The Installer Clean The Installions"
-rm -rf /Applications/Cydia.app
 rm -rf /User/Documents/ChimeraBootstrap
 uicache -a
 echo "All Done. Thanks You For Using The Installer Please Upgrade All Package In Sileo"
